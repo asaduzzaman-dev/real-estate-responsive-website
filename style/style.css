@@ -7,7 +7,10 @@
 }
 
 body {
+    width: 100vw;
+    font-size: 16px;
     font-family: "satoshi", sans-serif;
+    background-color: #ffffff;
 }
 
 a {
@@ -25,10 +28,11 @@ a {
     justify-content: space-between;
     position: fixed;
     z-index: 1000;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)); */
 }
 
 .logo {
-    width: 108px;
+    width: 7.5%;
     height: 30px;
     display: flex;
     align-items: center;
@@ -132,16 +136,19 @@ a {
     right: 8px;
     bottom: 12px;
     position: absolute;
-
 }
 
-.scroll-down-btn img {
+.scroll-down-btn .down {
     width: 32px;
     height: 32px;
     top: 30%;
     left: 30%;
     position: absolute;
     align-content: center;
+}
+
+.scroll-down-btn .down:hover{
+    cursor: pointer;
 }
 
 /* right-side image gallery section */
@@ -217,22 +224,22 @@ a {
     filter: grayscale(100%);
 }
 
-/* body content wrapper section-1 */
+/* about-us-container */
 
-.body-cntnt-wrapper-1 {
+.about-us-container {
     width: 100%;
     height: 1183px;
+    /* border: 1px solid; */
 }
 
 /* content-1 starts */
 .content-1 {
-    width: 1280px;
+    width: 88.889%;
     height: 341px;
-    margin-top: 80px;
-    margin-right: 80px;
-    margin-left: 80px;
+    margin: 80px auto;
     display: flex;
     gap: 123px;
+    /* border: 1px solid; */
 }
 
 .content-1 p {
@@ -243,14 +250,16 @@ a {
 
 
 .cntnt-heading {
-    width: 493px;
+    width: 38.516%;
     height: 263px;
+    /* border: 1px solid; */
 }
 
 .cntnt-heading h2 {
     width: 100%;
     height: 186px;
     line-height: 120%;
+    letter-spacing: -2%;
     font-size: 3.25rem;
     font-weight: 400;
 }
@@ -263,7 +272,7 @@ a {
     margin-top: 32px;
 }
 
-.learnMore-btn button {
+/* .learnMore-btn button {
     width: 100%;
     height: 100%;
     font-size: 1rem;
@@ -273,16 +282,39 @@ a {
     border-radius: 12px;
     color: #ffffff;
     background-color: #18181B;
-}
+} */
 
-.learnMore-btn button:hover {
+/* .learnMore-btn button:hover {
     cursor: pointer;
     color: #18181B;
     background-color: #ffffff;
+} */
+
+.learnMore-btn button{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    line-height: 155%;
+    padding: 10px 18px;
+    border-radius: 12px;
+    color: #ffffff;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border: none;
+    display: block;
+    background-image: linear-gradient(to right, #000000 0%, #504f4f  51%, #000000  100%)
+}
+
+.learnMore-btn button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .para-1 {
-    width: 662px;
+    width: 51.719%;
     height: 341px;
 }
 
@@ -291,12 +323,11 @@ a {
 /* content-2 starts */
 
 .content-2 {
-    width: 1280px;
+    width: 88.889%;
     height: 626px;
-    margin-top: 56px;
-    margin-right: 80px;
-    margin-left: 80px;
+    margin: 56px auto;
     position: relative;
+    /* border: 1px solid; */
 }
 
 .content-2 h3 {
@@ -313,23 +344,25 @@ a {
 }
 
 .expert-team-cntnt {
-    width: 316px;
+    width: 24.688%;
     height: 401px;
 
 }
 
 .content-photo-1 {
-    width: 316px;
+    width: 100%;
     height: 290px;
+    border-radius: 12px;
 }
 
 .content-photo-1 img {
     width: 100%;
     height: 100%;
+    border-radius: 12px;
 }
 
 .photo-1-details {
-    width: 316px;
+    width: 100%;
     height: 87px;
 }
 
@@ -346,22 +379,24 @@ a {
 }
 
 .innovative-dsgn-cntnt {
-    width: 402px;
+    width: 31.407%;
     height: 451px;
     position: absolute;
     top: 169px;
     bottom: 6px;
-    left: 348px;
+    left: 27.188%;
 }
 
 .content-photo-2 {
     width: 100%;
     height: 340px;
+    border-radius: 12px;
 }
 
 .content-photo-2 img {
     width: 100%;
     height: 100%;
+    border-radius: 12px;
 }
 
 .photo-2-details {
@@ -382,21 +417,23 @@ a {
 }
 
 .client-cntnt {
-    width: 498px;
+    width: 38.907%;
     height: 510.88px;
     position: absolute;
-    left: 782px;
+    right: 0;
     bottom: 115.12px;
 }
 
 .content-photo-3 {
     width: 100%;
     height: 399.88px;
+    border-radius: 12px;
 }
 
 .content-photo-3 img {
     width: 100%;
     height: 100%;
+    border-radius: 12px;
 }
 
 .photo-3-details {
@@ -417,3 +454,152 @@ a {
 }
 
 /* content-2 ends */
+
+/* property-container starts */
+
+.property-container {
+    width: 100%;
+    height: 1859px;
+    /* border: 1px solid; */
+}
+
+.property-listing{
+    width: 88.889%;
+    height: 93px;
+    margin: 80px auto;
+    display: flex;
+    gap: 200px;
+    /* border: 1px solid; */
+}
+
+.property-list-heading{
+    width: 39.61%;
+    height: 62px;
+    margin: 15.5px 0px 15.5px 0;
+    /* border: 1px solid; */
+}
+
+.property-listing h2{
+    font-size: 3.25rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -2%;
+    color: #18181B;
+}
+
+.property-list-para{
+    width: 44.766%;
+    height: 93px;
+    /* border: 1px solid; */
+}
+
+.property-list-para p{
+    font-size: 1.25rem;
+    line-height: 155%;
+    color: #70707B;
+}
+
+/* property cards container */
+
+.container {
+    width: 88.889%;
+    height: 1449px;
+    margin: auto;
+    padding-bottom: 80px;
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-template-rows: repeat(3, 467px);
+    gap: 24px;
+
+}
+
+.box {
+    position: relative;
+    /* border: 1px solid; */
+}
+
+.Card-1 {
+    width: 100%;
+    height: 339px;
+    border-radius: 12px;
+    /* border: 1px solid; */
+}
+
+.Card-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.CardDetails {
+    width: 100%;
+    height: 112px;
+    margin-top: 16px;
+}
+
+.PropertyInfo {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-addrs {
+    height: 100%;
+}
+
+.heading-addrs h3 {
+    margin-bottom: 4px;
+}
+
+.address {
+    display: flex;
+    gap: 1px 8px;
+}
+
+.address div {
+    width: 20px;
+    height: 20px;
+}
+
+.address div img {
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.PropertyDetails {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.PropertyDetails img {
+    width: 20px;
+    height: 19px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* border: 1px solid; */
+}
+
+.line {
+    width: 2px;
+    height: 12px;
+    background-color: #E4E4E7;
+}
+
