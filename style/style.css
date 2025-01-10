@@ -102,7 +102,7 @@ a {
         ),
         url('../asset/Images/Hero-Image.png') no-repeat center center/cover;
     ;
-    width: 100%;
+    width: 100vw;
     height: 1024px;
     position: relative;
 }
@@ -476,7 +476,7 @@ a {
     width: 39.61%;
     height: 62px;
     margin: 15.5px 0px 15.5px 0;
-    /* border: 1px solid; */
+    border: 1px solid;
 }
 
 .property-listing h2{
@@ -490,7 +490,8 @@ a {
 .property-list-para{
     width: 44.766%;
     height: 93px;
-    /* border: 1px solid; */
+    align-content: center;
+    border: 1px solid;
 }
 
 .property-list-para p{
@@ -501,7 +502,7 @@ a {
 
 /* property cards container */
 
-.container {
+.card-container {
     width: 88.889%;
     height: 1449px;
     margin: auto;
@@ -519,14 +520,14 @@ a {
     /* border: 1px solid; */
 }
 
-.Card-1 {
+.card {
     width: 100%;
     height: 339px;
     border-radius: 12px;
     /* border: 1px solid; */
 }
 
-.Card-1 img {
+.card img {
     width: 100%;
     height: 100%;
     border-radius: 12px;
